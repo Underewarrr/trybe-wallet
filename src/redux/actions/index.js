@@ -1,7 +1,7 @@
 const LOGIN_ACTION = 'LOGIN_ACTION';
 const SAVE_EXPENSES = 'SAVE_EXPENSES';
 const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
-    
+
 export const actionTypes = {
   LOGIN_ACTION,
   SAVE_EXPENSES,
@@ -16,14 +16,14 @@ const loginAction = (payload) => ({
 });
 
 const saveExpenses = (payload) => ({
-    type: SAVE_EXPENSES,
-    payload,
-  });
+  type: SAVE_EXPENSES,
+  payload,
+});
 
-  const removeExpense = (payload) => ({
-    type: REMOVE_EXPENSE,
-    payload,
-  });
+const removeExpense = (payload) => ({
+  type: REMOVE_EXPENSE,
+  payload,
+});
 
 export const actionCreators = {
   loginAction,
