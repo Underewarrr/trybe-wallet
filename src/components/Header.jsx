@@ -1,43 +1,32 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-const mapStateToProps = (state) => ({
-  email: state.user.email,
-  wallet: state.wallet,
-});
-
+const sum = 0;
 class Header extends React.Component {
   render() {
-    const { email, wallet: { expenses } } = this.props;
+    const { email, total } = this.props;
     return (
       <header>
-        <div>
-          TrybeWallet
-        </div>
-        <div>
-          <span>E-mail: </span>
-          <span data-testid="email-field">{ email }</span>
-        </div>
-        <div>
-          <span>Despesa Total: R$ </span>
-          <span data-testid="total-field">
-            { expenses.reduce((acc, { exchangeRates, currency, value }) => (
-              acc + (exchangeRates[currency].ask * value)
-            ), 0) }
-          </span>
-          <span data-testid="header-currency-field">BRL</span>
-        </div>
+        <h3 data-testid="email-field">{`Email: ${email}`}</h3>
+        <h3 data-testid="total-field">{total.toFixed(2)}</h3>
+        <h3 data-testid="header-currency-field">BRL</h3>
       </header>
     );
   }
 }
 
-export default connect(mapStateToProps)(Header);
+const mapStateToProps = (state) => ({
+  email: state.user.email,
+  total: state.wallet.expenses.reduce((item, curr) => {
+    item += curr.value * Number(curr.exchangeRates[curr.currency].ask);
+    return item;
+  }, sum),
+});
 
 Header.propTypes = {
-  email: PropTypes.string,
-  wallet: PropTypes.shape({
-    expenses: PropTypes.arrayOf(PropTypes.object),
-  }),
-}.isRequired;
+  email: PropTypes.string.isRequired,
+  total: PropTypes.arrayOf(PropTypes.any).isRequired,
+};
+
+export default connect(mapStateToProps)(Header);
