@@ -1,4 +1,4 @@
-import { actionTypes } from '../redux/actions';
+import { ACTION_CURRENCIES, ACTION_EXPENSES } from '../actions';
 
 const INITIAL_STATE = {
   currencies: [],
@@ -7,14 +7,15 @@ const INITIAL_STATE = {
 
 const wallet = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  case actionTypes.SAVE_TASK:
-    return { ...state, task: action.task };
-  case actionTypes.SAVE_EXPENSES:
-    return { ...state, expenses: [...state.expenses, action.payload] };
-  case actionTypes.REMOVE_EXPENSE:
+  case ACTION_CURRENCIES:
     return {
       ...state,
-      expenses: state.expenses.filter(({ id }) => action.payload !== id),
+      currencies: action.payload,
+    };
+  case ACTION_EXPENSES:
+    return {
+      ...state,
+      expenses: [...state.expenses, action.payload],
     };
   default:
     return state;
