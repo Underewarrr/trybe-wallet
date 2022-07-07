@@ -35,13 +35,16 @@ render() {
   const { email, password, isDisabled } = this.state;
   const { getEmail } = this.props;
   return (
-    <div class="login-box"> 
-      <h2>Login</h2>
-      <form>
-        <div class="user-box">
-          <label htmlFor="email">
+    <div class="login__div"> 
+      <div class="login__div__form">
+      <form class="login__form">
+        <div class="login__email__password__form">
+          <label 
+          class="login__email__password__form__label"
+          htmlFor="email">
             Email:
             <input
+              class="login__email__password__form__input"
               type="email"
               data-testid="email-input"
               name="email"
@@ -52,22 +55,24 @@ render() {
             />
           </label>
           </div>
-          <div class="user-box">
-          <label htmlFor="password">
+          <label 
+          class="login__email__password__form__label"
+          htmlFor="password">
             Senha:
             <input
+              class="login__email__password__form__input"
               type="password"
               data-testid="password-input"
-              placeholder="Senha"
+              placeholder="Senha com 6 caracteres"
               name="password"
               id="password"
               onChange={ this.handleChange }
               value={ password }
             />
           </label>
-        </div>
         <Link to="/carteira">
           <button
+            class="login__email__password__form__button"
             type="button"
             disabled={ isDisabled }
             onClick={ () => getEmail(email) }
@@ -76,6 +81,7 @@ render() {
           </button>
         </Link>
       </form>
+      </div>
     </div>
   );
 }

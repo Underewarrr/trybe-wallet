@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import './styles/table.css'
 
 class Table extends Component {
   namesCurr = (obj) => {
@@ -27,9 +28,9 @@ class Table extends Component {
   render() {
     const { expenses } = this.props;
     return (
-      <section>
-        <table>
-          <thead>
+      <section class="section">
+        <table class="section__table">
+          <thead class="section__thead__style">
             <tr>
               <th>Descrição</th>
               <th>Tag</th>
@@ -42,7 +43,7 @@ class Table extends Component {
               <th>Editar/Excluir</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="section__tbody__style">
             {expenses.map((obj, i) => (
               <tr key={ i }>
                 <td>{obj.description}</td>

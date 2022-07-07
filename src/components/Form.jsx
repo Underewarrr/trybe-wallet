@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchCurrencies, fetchExpenses } from '../actions';
 import Table from './Table';
+import './styles/form.css'
 
 const food = 'Alimentação';
 
@@ -51,11 +52,13 @@ class Form extends React.Component {
     const { currencies } = this.props;
     const { value, currency, method, tag, description } = this.state;
     return (
-      <form>
-        <label htmlFor="value-input">
+      <form class="form_flex">
+        <label 
+         class="form_label"
+         htmlFor="value-input">
           Valor:
-
           <input
+            class="form_input"
             id="value-input"
             type="number"
             name="value"
@@ -64,10 +67,12 @@ class Form extends React.Component {
             value={ value }
           />
         </label>
-        <br />
-        <label htmlFor="description-input">
+        <label 
+         class="form_label"
+         htmlFor="description-input">
           Descrição:
           <input
+            class="form_input"
             id="description-input"
             type="text"
             name="description"
@@ -76,10 +81,12 @@ class Form extends React.Component {
             value={ description }
           />
         </label>
-        <br />
-        <label htmlFor="Moeda">
+        <label 
+        class="form_label"
+        htmlFor="Moeda">
           Moeda:
           <select
+            class="form_select"
             id="Moeda"
             name="currency"
             onChange={ this.handleChange }
@@ -90,9 +97,12 @@ class Form extends React.Component {
             )}
           </select>
         </label>
-        <label htmlFor="paymentMethod">
+        <label 
+        class="form_label"
+        htmlFor="paymentMethod">
           Método de Pagamento:
           <select
+            class="form_select"
             id="paymentMethod"
             type="select"
             data-testid="method-input"
@@ -105,9 +115,12 @@ class Form extends React.Component {
             <option value="Cartão de débito">Cartão de débito</option>
           </select>
         </label>
-        <label htmlFor="tag-input">
+        <label 
+         class="form_label"
+        htmlFor="tag-input">
           Tag:
           <select
+            class="form_select"
             id="tag-input"
             type="select"
             data-testid="tag-input"
@@ -122,7 +135,9 @@ class Form extends React.Component {
             <option>Saúde</option>
           </select>
         </label>
-        <button type="button" onClick={ this.handleButton }>
+        <button 
+        class="form_button"
+        type="button" onClick={ this.handleButton }>
           Adicionar despesa
         </button>
         <Table />
