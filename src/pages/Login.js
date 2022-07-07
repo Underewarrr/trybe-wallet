@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { actionSaveUser } from '../actions/index';
-
+import './styles/login.css';
 class Login extends React.Component {
   constructor() {
     super();
@@ -35,33 +35,37 @@ render() {
   const { email, password, isDisabled } = this.state;
   const { getEmail } = this.props;
   return (
-    <div>
-      <h1>Login</h1>
+    <div class="login-box"> 
+      <h2>Login</h2>
       <form>
-        <label htmlFor="email">
-          Email:
-          <input
-            type="email"
-            data-testid="email-input"
-            name="email"
-            placeholder="Email"
-            id="email"
-            value={ email }
-            onChange={ this.handleChange }
-          />
-        </label>
-        <label htmlFor="password">
-          Senha:
-          <input
-            type="password"
-            data-testid="password-input"
-            placeholder="Senha"
-            name="password"
-            id="password"
-            onChange={ this.handleChange }
-            value={ password }
-          />
-        </label>
+        <div class="user-box">
+          <label htmlFor="email">
+            Email:
+            <input
+              type="email"
+              data-testid="email-input"
+              name="email"
+              placeholder="Email"
+              id="email"
+              value={ email }
+              onChange={ this.handleChange }
+            />
+          </label>
+          </div>
+          <div class="user-box">
+          <label htmlFor="password">
+            Senha:
+            <input
+              type="password"
+              data-testid="password-input"
+              placeholder="Senha"
+              name="password"
+              id="password"
+              onChange={ this.handleChange }
+              value={ password }
+            />
+          </label>
+        </div>
         <Link to="/carteira">
           <button
             type="button"
