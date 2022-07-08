@@ -35,10 +35,6 @@ localhost:3001
 ```
 ### ⌨️ O que é o ESLint?
 Imagine que você está desenvolvendo um projeto em JavaScript com outras pessoas desenvolvedoras. Concorda que, sem um guia de padronização, cada integrante escreveria o código de uma determinada forma? E que seria difícil refatorar todo o projeto para corrigir eventuais problemas e melhorar sua qualidade e organização? Por isso, é importante o uso de uma ferramenta plugável como o ESLint, que permite definir uma guia de estilo padrão a ser respeitada por todas as pessoas desenvolvedoras envolvidas na fase de elaboração do projeto.
-## 📦 Desenvolvimento
-Para usar em um ambiente de produção rode:
-
-```npm run build```
 
 ## 🛠️ Construído com
 * [React](https://pt-br.reactjs.org/) 
