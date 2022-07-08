@@ -52,7 +52,7 @@ Imagine que você está desenvolvendo um projeto em JavaScript com outras pessoa
 * [React](https://pt-br.reactjs.org/) 
 * [Redux](https://react-redux.js.org/)
 ## ✒️ Autores
-* **Rafhael Oliveira** - [Desenvolvedor](https://github.com/underewarrr)
+**Rafhael Oliveira** - [Desenvolvedor](https://github.com/underewarrr)
 ## 🎁 Expressões de gratidão
 * Este projeto foi desenvolvido enquanto estudante na Trybe 📢
 * Obrigado a todos da trybe! 🤓.
