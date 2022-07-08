@@ -34,7 +34,7 @@ Via Github registry
 ```docker pull ghcr.io/underewarrr/trybe-wallet:latest```
 
 Via DockerHub
-```docker push underewar/trybe-wallet:tagname```
+```docker push underewar/trybe-wallet:latest```
 
 Para executar este projeto em um ambiente Docker ***local***
 ```
