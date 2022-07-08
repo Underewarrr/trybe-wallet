@@ -24,9 +24,6 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ```git clone https://github.com/Underewarrr/trybe-wallet```
 
-
-```npm install```
-
 Para executar este projeto em um ambiente Docker
 ```
 docker-compose up --build
