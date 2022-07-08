@@ -1,5 +1,4 @@
-name: This a workflow title on: [push] # When pushing to any branch then run this action
-# Env variable
+name: Docker Publish
 env:
   DOCKER_USER: ${{secrets.DOCKER_USER}}
   DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
