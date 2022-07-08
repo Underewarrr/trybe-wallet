@@ -1,4 +1,6 @@
 # TrybeWallet
+[![Docker Image CI](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml/badge.svg?branch=docker-github-action)](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml)
+
 Neste app você vai encontrar uma carteira de controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário deverá ser capaz de:
 
     Adicionar, remover e editar um gasto;
