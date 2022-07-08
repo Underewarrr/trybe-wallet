@@ -28,7 +28,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ```npm start```
 
-Para executar este projeto em um ambiente docker
+Para executar este projeto em um ambiente docker local
 ```
 docker-compose up --build
 ```
