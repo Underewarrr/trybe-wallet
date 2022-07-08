@@ -1,9 +1,9 @@
 # TrybeWallet
-***Local Build Status***
+***Build Status***
 
 [![Docker Image CI](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml/badge.svg?branch=docker-github-action)](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml)
 
-***DockerHub Status***
+***Repo Build/Deploy Status***
 
 [![Docker Publish](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-publish.yml)
 
