@@ -1,35 +1,22 @@
-name: Docker Publish
-on:
-  push:
-    branches:
-      — '*'
-    tags:
-      — '*'
-  pull_request:jobs:
-  publish_docker_images:
-    runs-on: ubuntu-latest    steps:
-    — name: Checkout
+on: [push,pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: test out our github action with no image version
+    steps:
+    - name: git checkout
       uses: actions/checkout@v2
-    — name: Docker meta
-      id: meta
-      uses: crazy-max/ghaction-docker-meta@v2
+    - name: test 
+      id: test
+      uses: ryanjfrizzell/action-bpd@master
       with:
-        images: trybe-wallet_trybewallet
-        tags: |
-          type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'master') }}
-          type=ref,event=tag
-        flavor: |
-          latest=false
-     — name: Login to DockerHub
-       if: GitHub.event_name != 'pull_request'
-       uses: docker/login-action@v1
-       with:
-         username: ${{ secrets.DOCKERHUB_USERNAME }}
-         password: ${{ secrets.DOCKERHUB_TOKEN }}
-     — name: Build and push
-       uses: docker/build-push-action@v2
-       with:
-         context: .
-         push: ${{ GitHub.event_name != 'pull_request' }}
-         tags: ${{ steps.meta.outputs.tags }}
-         labels: ${{ steps.meta.outputs.labels }}
+        docker_registry_url: 'docker.pkg.github.com'
+        docker_registry_owner: 'ryanjfrizzell'
+        docker_repository: 'action-bpd'
+        docker_image: 'bpdautolatest'
+        docker_username: ${{ secrets.docker_username }}
+        docker_password: ${{ secrets.docker_password }}
+        dockerfile: 'test/Dockerfile.test'
+    - name: Get the output
+      run: |
+          echo "imageinfo was ${{ steps.test.outputs.imageinfo }}"
