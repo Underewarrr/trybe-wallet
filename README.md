@@ -8,7 +8,6 @@
 [![Docker Publish](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-publish.yml)
 
 App no [DockerHub](https://hub.docker.com/repository/docker/underewar/trybe-wallet/general)
-
 Neste app você vai encontrar uma carteira de controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário deverá ser capaz de:
 
     Adicionar, remover e editar um gasto;
