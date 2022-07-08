@@ -41,6 +41,7 @@ Imagine que você está desenvolvendo um projeto em JavaScript com outras pessoa
 ## 🛠️ Construído com
 * [React](https://pt-br.reactjs.org/) 
 * [Redux](https://react-redux.js.org/)
+* [Docker](https://www.docker.com/)
 ## ✒️ Autores
 **Rafhael Oliveira** - [Desenvolvedor](https://github.com/underewarrr)
 ## 🎁 Expressões de gratidão
