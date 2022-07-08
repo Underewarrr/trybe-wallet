@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag underewarrr/trybe-wallet:$(date +%s)
       
     - name: Push into Docker Hub
-      run: docker push underewarrr/trybe-wallet
+      run: docker push underewar/trybe-wallet
