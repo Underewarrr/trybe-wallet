@@ -27,15 +27,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ```npm install```
 
-Acessando com o Docker ***remotamente***
-
-Via Github registry
-```docker pull ghcr.io/underewarrr/trybe-wallet:latest```
-
-Via DockerHub
-```docker push underewar/trybe-wallet:latest```
-
-Para executar este projeto em um ambiente Docker ***local***
+Para executar este projeto em um ambiente Docker
 ```
 docker-compose up --build
 ```
