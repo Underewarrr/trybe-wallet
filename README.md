@@ -43,6 +43,6 @@ Imagine que você está desenvolvendo um projeto em JavaScript com outras pessoa
 **Rafhael Oliveira** - [Desenvolvedor](https://github.com/underewarrr)
 ## 🎁 Expressões de gratidão
 * Este projeto foi desenvolvido enquanto estudante na Trybe 📢
-* Obrigado a todos da trybe! 🤓.
+* Obrigado Trybers! 🤓.
 ---
 ⌨️ com ❤️ por [Rafhael Oliveira](https://www.linkedin.com/in/rafhael-oliveira/) 😊
