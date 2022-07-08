@@ -26,9 +26,6 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 Para executar este projeto em um ambiente Docker
 ```
-docker-compose up --build
-```
-```
 docker-compose up
 ```
 Acesse através
