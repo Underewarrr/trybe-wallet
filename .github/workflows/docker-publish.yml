@@ -18,6 +18,6 @@ jobs:
           password: ${{ secrets.ACCOUNT_SECRET }}
       - uses: actions/checkout@v2
       - name: create image from repository
-        run: docker build -t ghcr.io/${{ github.actor }}/trybe-wallet .
+        run: docker build -t ghcr.io/underewarrr/trybe-wallet .
       - name: push image to GitHub Container Registry
-        run: docker push ghcr.io/${{ github.actor }}/trybe-wallet:latest
+        run: docker push ghcr.io/underewarrr/trybe-wallet:latest
