@@ -2,12 +2,12 @@ on: [push,pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: docker publish image
+    name: trybe-wallet_trybewallet
     steps:
     - name: git checkout
       uses: actions/checkout@v2
-    - name: docker publish 
-      id: publish
+    - name: trybe-wallet_trybewallet
+      id: trybe-wallet_trybewallet
       uses: manusa/actions-publish-docker@v1.1.2
       with:
         docker_registry_url: 'docker.pkg.github.com'
