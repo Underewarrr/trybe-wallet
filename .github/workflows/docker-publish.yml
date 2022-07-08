@@ -6,9 +6,9 @@ jobs:
     steps:
     - name: git checkout
       uses: actions/checkout@v2
-    - name: test 
-      id: test
-      uses: underewarrr/action-bpd@master
+    - name: docker publish 
+      id: publish
+      uses: manusa/actions-publish-docker@v1.1.2
       with:
         docker_registry_url: 'docker.pkg.github.com'
         docker_registry_owner: 'underewarrr'
