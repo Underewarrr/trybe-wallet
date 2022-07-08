@@ -1,5 +1,5 @@
 # TrybeWallet
-***Local Build Status ***
+***Local Build Status***
 
 [![Docker Image CI](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml/badge.svg?branch=docker-github-action)](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml)
 
