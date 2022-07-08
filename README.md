@@ -39,6 +39,7 @@ Imagine que você está desenvolvendo um projeto em JavaScript com outras pessoa
 * [React](https://pt-br.reactjs.org/) 
 * [Redux](https://react-redux.js.org/)
 * [Docker](https://www.docker.com/)
+* [API](https://economia.awesomeapi.com.br/json/all)
 ## ✒️ Autor
 **Rafhael Oliveira** - [Desenvolvedor](https://github.com/underewarrr)
 ## 🎁 Expressões de gratidão
