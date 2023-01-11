@@ -1,6 +1,8 @@
 # TrybeWallet
 ***Build Status***
 
+![Git Hub Repo Size](https://img.shields.io/github/repo-size/underewarrr/trybe-wallet)<br>
+
 [![Docker Image CI](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml/badge.svg?branch=docker-github-action)](https://github.com/Underewarrr/trybe-wallet/actions/workflows/docker-image.yml)
 
 ***Repo Build/Deploy Status***
